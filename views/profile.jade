@@ -1,0 +1,9 @@
+h1 Perfil
+ul
+    li 
+        a(href="/") Inicio
+    li
+        a(href="/users/logout") Cerrar sesion
+
+p   Email: #{JSON.parse(session.user).email}
+p   Contraseña(Encriptada :0): #{JSON.parse(session.user).password}     
